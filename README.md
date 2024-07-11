@@ -20,3 +20,5 @@ result = z.SelectModulesCvid("Deals",184223000010304099)
 for i in result:
     print(i)
 ```
+以上是简单的示例，SelectModulesCvid有两个参数，第一个是模块API名称，第二个是页面的ＩＤ
+如以上填写正确，运行则可以获取２００条资料
