@@ -1,8 +1,9 @@
 # Zoho-CRM-API
 #### 这是一个使用Python开发的对Zoho CRM 进行操作的API的简单封装
+####需要的第三方库
+requests
 
 您需要更改以下文件内容：
-
 ##### 请更改refresh.txt文件
 
 文件内容如下：<br>
@@ -20,5 +21,32 @@ result = z.SelectModulesCvid("Deals",184223000010304099)
 for i in result:
     print(i)
 ```
-以上是简单的示例，SelectModulesCvid有两个参数，第一个是模块API名称，第二个是页面的ＩＤ
-如以上填写正确，运行则可以获取２００条资料
+以上是简单的示例，SelectModulesCvid有两个参数，第一个是模块API名称，第二个是页面的ＩＤ<br>
+如以上填写正确，运行则可以获取２００条资料<br>
+zoho_select.py里面封装这部分对模块资料的增删改查，
+因模块名称以及API名称不尽相同，故需要按照我写的进行更改即可，<br>
+需要注意请求方式以及路径和字段ＡＰＩ名称。<br>
+####获取client_id以及client_secret
+进入页面：https://api-console.zoho.com.cn/ 创建一个应用，会给你client_id以及client_secret<br>
+####获取refresh_token
+第一步：填写client_id和回调的URL地址。access_type=offline说明需要刷新令牌
+scope说明权限
+redirect_uri:回调地址
+```
+https://accounts.zoho.com.cn/oauth/v2/auth?scope=ZohoCRM.modules.ALL,ZohoCRM.settings.ALL&client_id=
+XXXXXXXXXXXXXXXXXXXXXXXX&response_type=code&access_type=offline&redirect_uri=http://www.baidu.com
+```
+第二步：
+
+将上一不重定向获取的code填入地址，并替换相应信息，即可，
+
+```
+https://accounts.zoho.com.cn/oauth/v2/token?code=XXXXXXXXXXXXXXXXXXXX&client_id=XXXXXXXXXXXXXXXXXXXXX&client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX&redirect_uri=http://www.baidu.com&grant_type=authorization_code
+```
+
+
+
+
+
+
+https://www.zoho.com.cn/crm/help/api/v2/
