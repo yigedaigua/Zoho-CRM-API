@@ -46,6 +46,5 @@ https://accounts.zoho.com.cn/oauth/v2/token?code=XXXXXXXXXXXXXXXXXXXX&client_id=
 ```
 ## 技术一般，写的很烂
 欢迎大家一起交流<br>
-![411c6cbdb1a0410898c5ea0320ede6c](https://github.com/yigedaigua/Zoho-CRM-API/assets/52713163/03441e0f-9e7e-4d92-ab44-b3878fdade52)
-
+<img src="https://github.com/yigedaigua/Zoho-CRM-API/assets/52713163/9ab82d51-2d42-467a-80c0-bb8630aee012" style="width: 50%">
 
