@@ -13,8 +13,10 @@ refresh_token=1000.33bf23421520dcd81761c5f3.ddbca0c74b7e86ff451e283490a0fbd6<br>
 ##### 使用
 
 
+```python
 from zoho_select import zohoselect
 z = zohoselect()
 result = z.SelectModulesCvid("Deals",184223000010304099)
 for i in result:
     print(i)
+```
