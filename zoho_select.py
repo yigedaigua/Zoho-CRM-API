@@ -152,8 +152,8 @@ class zohoselect(zoho):
 			userDep = Dep["Dep"]
 		return userDep
 	def create(self,workName,user:str):
-		if user == "ta@morglory.com.tw" or user == "administrator@morglory.com.tw":
-			user = "ted_chou@morglory.com.tw"
+		if user == "ta@mmmmm.com" or user == "administrator@mmmmm.com":
+			user = "ted_chou@mmmmm.com"
 		print(user)
 		Dep = self.personinfo(user)
 		print(Dep)
@@ -180,8 +180,8 @@ class zohoselect(zoho):
 		return records["data"]
 	# 创建一条任务信息
 	def createone(self,workName,Date:str,What_ID:str,owner:str):
-		if owner == "ta@morglory.com.tw":
-			owner = "ted_chou@morglory.com.tw"
+		if owner == "ta@mmmmm.com":
+			owner = "ted_chou@mmmmm.com"
 		url = "https://www.zohoapis.com.cn/crm/v2/Tasks"
 		headers = {
 			"Authorization": f"Zoho-oauthtoken {zoho.access_token(self)}",
@@ -204,8 +204,8 @@ class zohoselect(zoho):
 		return records["data"]
 	# 更新任务信息
 	def updatecreateone(self,workName,Date:str,What_ID:str,owner:str):
-		if owner == "ta@morglory.com.tw":
-			owner = "ted_chou@morglory.com.tw"
+		if owner == "ta@mmmmm.com":
+			owner = "ted_chou@mmmmm.com"
 		url = "https://www.zohoapis.com.cn/crm/v2/Tasks"
 		headers = {
 			"Authorization": f"Zoho-oauthtoken {zoho.access_token(self)}",
@@ -308,8 +308,8 @@ class zohoselect(zoho):
 		return records
 	#创建共有专案
 	def create_Project_Management(self,workName,count,user:str):
-		if user == "ta@morglory.com.tw" or user == "administrator@morglory.com.tw":
-			user = "ted_chou@morglory.com.tw"
+		if user == "ta@mmmmm.com" or user == "administrator@mmmmm.com":
+			user = "ted_chou@mmmmm.com"
 		Dep = self.personinfo(user)
 		url = "https://www.zohoapis.com.cn/crm/v2/Project_Management"
 		headers = {
@@ -411,8 +411,8 @@ class zohoselect(zoho):
 		return records
 # 	创建共有工作关联共有工作
 	def create_Job_Management(self,workName,count,user:str,relationship,starttime,endtime):
-		if user == "ta@morglory.com.tw" or user == "administrator@morglory.com.tw":
-			user = "ted_chou@morglory.com.tw"
+		if user == "ta@mmmmm.com" or user == "administrator@mmmmm.com":
+			user = "ted_chou@mmmmm.com"
 		Dep = self.personinfo(user)
 		url = "https://www.zohoapis.com.cn/crm/v2/Job_Management"
 		headers = {
@@ -459,8 +459,8 @@ class zohoselect(zoho):
 		return records["data"]
 	# 创建共有工作，与引合案件关联
 	def Deal_create_Job_Management(self,workName,count,user:str,relationship,starttime,endtime):
-		if user == "ta@morglory.com.tw" or user == "administrator@morglory.com.tw":
-			user = "ted_chou@morglory.com.tw"
+		if user == "ta@mmmmm.com" or user == "administrator@mmmmm.com":
+			user = "ted_chou@mmmmm.com"
 		Dep = self.personinfo(user)
 		url = "https://www.zohoapis.com.cn/crm/v2/Job_Management"
 		headers = {
@@ -506,8 +506,8 @@ class zohoselect(zoho):
 		records = response.json()
 		return records["data"]
 	def create_Job_Management_one(self,workName,count,user:str,starttime,endtime):
-		if user == "ta@morglory.com.tw" or user == "administrator@morglory.com.tw":
-			user = "ted_chou@morglory.com.tw"
+		if user == "ta@mmmmm.com" or user == "administrator@mmmmm.com":
+			user = "ted_chou@mmmmm.com"
 		Dep = self.personinfo(user)
 		url = "https://www.zohoapis.com.cn/crm/v2/Job_Management"
 		headers = {
@@ -628,8 +628,8 @@ class zohoselect(zoho):
 		return records
 	# 创建会议
 	def Eventscreateone(self,EventName,Content,What_ID:str,owner:str,Start_DateTime,End_DateTime):
-		if owner == "ta@morglory.com.tw":
-			owner = "ted_chou@morglory.com.tw"
+		if owner == "ta@mmmmm.com":
+			owner = "ted_chou@mmmmm.com"
 		if Start_DateTime == None or End_DateTime == None:
 			Start_DateTime = str(dt.datetime.now().date())+ "T08:30:00+08:00"
 			End_DateTime = str(dt.datetime.now().date())+ "T17:30:00+08:00"
