@@ -46,5 +46,5 @@ class zohoselect(zoho):
 	
 if __name__ == "__main__":
 	z = zohoselect()
-	z.SelectModulesCvidtest("Deals",184223000010304099)
+	z.SelectModulesCvid("Des",18422310304099)
 
